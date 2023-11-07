@@ -7,10 +7,15 @@ import Col from 'react-bootstrap/Col';
 // component imports
 import NavbarComponent from './components/Navbar.jsx';
 import About from './components/About.jsx';
+import { Hero } from './components/Hero.jsx';
+import Projects from './components/Projects.jsx';
+import { Contact } from './components/Contact.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
   return (
     <>
+      {/* navbar component */}
       <Container fluid>
         <Row>
           <Col>
@@ -18,14 +23,52 @@ function App() {
           </Col>
         </Row>
       </Container>
+
+      {/* hero component */}
+      <Container fluid>
+        <Row>
+          <Col>
+            <Hero />
+          </Col>
+        </Row>
+      </Container>
+
+      {/* about component */}
       <Container fluid>
         <Row>
           <Col>
             <About />
           </Col>
         </Row>
-    </Container>
-  </>
+      </Container>
+
+      {/* projects component */}
+      <Container fluid>
+        <Row>
+          <Col>
+            <Projects />
+          </Col>
+        </Row>
+      </Container>
+
+      {/* contact component */}
+      <Container fluid>
+        <Row>
+          <Col>
+            <Contact />
+          </Col>
+        </Row>
+      </Container>
+
+      {/* footer component */}
+      <Container fluid>
+        <Row>
+          <Col>
+            <Footer />
+          </Col>
+        </Row>
+      </Container>
+    </>
   )
 }
 

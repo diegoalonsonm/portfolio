@@ -1,3 +1,16 @@
 a:hover {
     color: #67568c !important;
 }
+
+@media screen and (min-width: 992px) {
+    .p-lg-40 {
+        padding: 200px;
+    }    
+}
+
+@media screen and (max-width: 991px) {
+    .p-lg-40 {
+        padding: 3rem;
+    }
+    
+}
