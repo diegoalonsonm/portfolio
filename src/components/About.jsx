@@ -2,7 +2,7 @@ import '../../sass/main.scss';
 import { PcDisplayHorizontal } from 'react-bootstrap-icons';
 import HtmlIcon from './icons/HtmlIcon';
 import { CssIcon } from './icons/CssIcon';
-import JavaScriptIcon from '../components/icons/JavaScriptIcon';
+import JavaScriptIcon from '../components/icons/JavascriptIcon';
 import NextIcon from './icons/NextIcon';
 import AngularIcon from './icons/AngularIcon';
 import TypescriptIcon from './icons/TypescriptIcon';
