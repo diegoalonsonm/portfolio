@@ -4,7 +4,7 @@ import { WindowDesktop } from 'react-bootstrap-icons'
 
 const CardComponent = ({ title, description, githubLink, appLink, techStack, image }) => {
   return (
-    <div className='container p-4'>
+    <div className='container rounded p-4'>
       <div className="row">
         <div className="col-12 col-md-6">
           <h4 className='text-info'>

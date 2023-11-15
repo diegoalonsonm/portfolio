@@ -1,12 +1,14 @@
 import '../../../sass/main.scss';
 
-const ButtonComponent = ({ className, color, textColor, text, href }) => {
+const ButtonComponent = ({ className, color, textColor, text, href, cv }) => {
 
-  if(!href) {
+  if(cv) {
     return (
-      <button className={`btn btn-${color} shadow-lg ${className} text-${textColor}`}>
+      <a className={`btn btn-${color} shadow-lg ${className} text-${textColor}`} href={href} 
+        target='_blank'
+      >
           {text}
-      </button>
+      </a>
     )  
   } else {
     return (
