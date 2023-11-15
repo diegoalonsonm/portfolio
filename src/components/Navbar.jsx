@@ -13,10 +13,10 @@ function NavbarComponent() {
         <Navbar.Collapse id="basic-navbar-nav" className='justify-content-lg-end'>
           <Nav className="">
             <hr className='d-block d-lg-none' />
-            <Nav.Link href="#home" className="fw-bold fs-5 text-dark">Home</Nav.Link>
-            <Nav.Link href="#about" className="fw-bold fs-5 text-dark">About</Nav.Link>
-            <Nav.Link href="#projects" className="fw-bold fs-5 text-dark">My Projects</Nav.Link>
-            <Nav.Link href="#contact" className="fw-bold fs-5 text-dark">Contact Me</Nav.Link>
+            <Nav.Link href="#home" className="fw-bold fs-5 text-secondary">Home</Nav.Link>
+            <Nav.Link href="#about" className="fw-bold fs-5 text-secondary">About</Nav.Link>
+            <Nav.Link href="#projects" className="fw-bold fs-5 text-secondary">My Projects</Nav.Link>
+            <Nav.Link href="#contact" className="fw-bold fs-5 text-secondary">Contact Me</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

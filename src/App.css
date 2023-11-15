@@ -1,14 +1,18 @@
 a:hover {
-    color: #67568c !important;
+    color: #90b4ce !important;
 }
 
-@media screen and (min-width: 992px) {
+.hero-btn:hover {
+    color: white !important;
+}
+
+@media screen and (min-width: 768px) {
     .p-lg-40 {
         padding: 200px;
     }    
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
     .p-lg-40 {
         padding: 3rem;
     }

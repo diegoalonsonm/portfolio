@@ -4,6 +4,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import '../sass/main.scss';
+
 // component imports
 import NavbarComponent from './components/Navbar.jsx';
 import About from './components/About.jsx';
@@ -43,7 +45,7 @@ function App() {
       </Container>
 
       {/* projects component */}
-      <Container fluid>
+      <Container fluid className='bg-light'>
         <Row>
           <Col>
             <Projects />

@@ -1,4 +1,4 @@
-import '../../sass/main.scss';
+import '../../../sass/main.scss';
 
 const ButtonComponent = ({ className, color, textColor, text, href }) => {
 
