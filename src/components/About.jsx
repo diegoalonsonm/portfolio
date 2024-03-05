@@ -6,9 +6,9 @@ import JavaScriptIcon from '../components/icons/JavascriptIcon';
 import NextIcon from './icons/NextIcon';
 import AngularIcon from './icons/AngularIcon';
 import TypescriptIcon from './icons/TypescriptIcon';
-import FigmaIcon from './icons/FigmaIcon';
 import GitHubIcon from './icons/GitHubIcon';
 import BootstrapIcon from './icons/BootstrapIcon';
+import { NodeJsIcon } from './icons/NodeJsIcon';
 
 const About = () => {
   return (
@@ -60,7 +60,7 @@ const About = () => {
                     <BootstrapIcon />
                   </div>
                   <div className="col">
-                    <FigmaIcon />
+                    <NodeJsIcon />
                   </div>
                   <div className="col">
                     <GitHubIcon />
