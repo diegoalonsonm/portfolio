@@ -5,6 +5,7 @@ import CardComponent from '../components/components/Card';
 import RecipeBookImg from '../assets/img/recipeBook.jpeg'
 import QuoteGeneratorImg from '../assets/img/quoteGenerator.jpeg'
 import BookApiImg from '../assets/img/bookApi.jpg'
+import ReservApp from '../assets/img/reservapp.png'
 
 const Projects = () => {
   return (
@@ -39,7 +40,15 @@ const Projects = () => {
           githubLink="https://github.com/diegoalonsonm/books-api-server"
           appLink="https://books-api-jade.vercel.app/" 
           techStack={['Vite', 'Tailwind CSS', 'Node JS', 'Mongo DB', 'Express', 'Vercel', 'Render']}
-        />        
+        />                
+      </div>
+      <div className='row my-5 shadow'>
+        <CardComponent title="ReservApp" description="A lading page for some of the best venues here in Guanacaste, Costa Rica. It has a little description of wach venue plus their individual website. It also has a form i which you can make a reservation and it'll send you an email with the data you just inserted." 
+          image={ReservApp} 
+          githubLink="https://github.com/diegoalonsonm/ReservAPP-server"
+          appLink="https://reserv-app.vercel.app/" 
+          techStack={['Next JS', 'Bootstrap', 'Node JS', 'Mongo DB', 'Express', 'Vercel', 'Render']}
+        />                
       </div>
     </section>
   )
