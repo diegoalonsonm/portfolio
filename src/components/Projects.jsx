@@ -13,7 +13,7 @@ const Projects = () => {
       <p className='bg-light fw-bold fs-2 text-secondary'>
         My projects
       </p>
-      <div className='row my-5 shadow'>
+      <div className='row my-5 shadow mx-auto' style={{maxWidth: '1000px'}}>
         <CardComponent title="Recipe Book" description="Web application where you can manage recipes 
           and create a shopping list with the ingredients you’ll need. It has an auth module in order 
           to control the recipes and shopping lists." 
@@ -23,7 +23,7 @@ const Projects = () => {
           techStack={['Angular', 'Bootstrap', 'Typescript', 'Firebase']}
         />        
       </div>
-      <div className='row my-5 shadow'>
+      <div className='row my-5 shadow mx-auto' style={{maxWidth: '1000px'}}>
         <CardComponent title="Quote Generator" description="Application with Next JS on the front-end 
           and AWS Amplify on the back-end. It makes an API call and generates a downloadable letter with 
           a motivational phrase and its author." 
@@ -34,7 +34,7 @@ const Projects = () => {
             'DynamoDB', 'Node JS', 'Zenquotes API']}
         />        
       </div>
-      <div className='row my-5 shadow'>
+      <div className='row my-5 shadow mx-auto' style={{maxWidth: '1000px'}}>
         <CardComponent title="Books API" description="This is the client side of consuming a Node JS API. It let's you see all the books stored in a MongoDB and also let's you create, update, delete and look the data of an specific book. The GitHub link redierects you to the server side of the code." 
           image={BookApiImg} 
           githubLink="https://github.com/diegoalonsonm/books-api-server"
@@ -42,7 +42,7 @@ const Projects = () => {
           techStack={['Vite', 'Tailwind CSS', 'Node JS', 'Mongo DB', 'Express', 'Vercel', 'Render']}
         />                
       </div>
-      <div className='row my-5 shadow'>
+      <div className='row my-5 shadow mx-auto' style={{maxWidth: '1000px'}}>
         <CardComponent title="ReservApp" description="A lading page for some of the best venues here in Guanacaste, Costa Rica. It has a little description of wach venue plus their individual website. It also has a form i which you can make a reservation and it'll send you an email with the data you just inserted." 
           image={ReservApp} 
           githubLink="https://github.com/diegoalonsonm/ReservAPP-server"

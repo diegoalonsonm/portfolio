@@ -22,7 +22,7 @@ const About = () => {
                 A Web Development enthusiast <PcDisplayHorizontal className='ms-1 mb-1' size={20} />
               </p>
               <p className='text-success'>
-                I'm a Web Developer located in Costa Rica. I have a passion for <span className='text-primary fw-semibold'>web development</span> and love to create for web and mobile devices. I like to turn <span className='text-primary fw-semibold'>ideas into code</span>. I'm constantly learning since the past 3 years and looking for an opportinuty where I could use all my knowledge in order to help others. I'm a very <span className='text-primary fw-semibold'>focused</span>, <span className='text-primary fw-semibold'>passionate</span> and <span className='text-primary fw-semibold'>commited</span> person. I'm always looking for new challenges and opportunities to grow as a developer.
+                I&apos;m a Web Developer located in Costa Rica. I have a passion for <span className='text-primary fw-semibold'>web development</span> and love to create for web and mobile devices. I like to turn <span className='text-primary fw-semibold'>ideas into code</span>. I&apos;m constantly learning since the past 3 years and looking for an opportinuty where I could use all my knowledge in order to help others. I&apos;m a very <span className='text-primary fw-semibold'>focused</span>, <span className='text-primary fw-semibold'>passionate</span> and <span className='text-primary fw-semibold'>commited</span> person. I&apos;m always looking for new challenges and opportunities to grow as a developer.
               </p>
             </div>
             <hr />            
