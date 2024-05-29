@@ -1,14 +1,14 @@
 import '../../sass/main.scss';
 import { PcDisplayHorizontal } from 'react-bootstrap-icons';
-import HtmlIcon from './icons/HtmlIcon';
-import { CssIcon } from './icons/CssIcon';
-import JavaScriptIcon from '../components/icons/JavascriptIcon';
 import NextIcon from './icons/NextIcon';
 import AngularIcon from './icons/AngularIcon';
 import TypescriptIcon from './icons/TypescriptIcon';
 import GitHubIcon from './icons/GitHubIcon';
-import BootstrapIcon from './icons/BootstrapIcon';
 import { NodeJsIcon } from './icons/NodeJsIcon';
+import { SQLIcon } from './icons/SQLIcon';
+import { AWSIcon } from './icons/AWSIcon';
+import { FlutterIcon } from './icons/FlutterIcon';
+import { JavaIcon } from './icons/JavaIcon';
 
 const About = () => {
   return (
@@ -19,10 +19,10 @@ const About = () => {
           <div className="rounded border mx-auto p-3 shadow-lg" style={{maxWidth: '1000px'}}>
             <div>
               <p className='fw-semibold fs-4 text-secondary'>
-                A Web Development enthusiast <PcDisplayHorizontal className='ms-1 mb-1' size={20} />
+                A Software Development enthusiast <PcDisplayHorizontal className='ms-1 mb-1' size={20} />
               </p>
               <p className='text-success'>
-                I&apos;m a Web Developer located in Costa Rica. I have a passion for <span className='text-primary fw-semibold'>web development</span> and love to create for web and mobile devices. I like to turn <span className='text-primary fw-semibold'>ideas into code</span>. I&apos;m constantly learning since the past 3 years and looking for an opportinuty where I could use all my knowledge in order to help others. I&apos;m a very <span className='text-primary fw-semibold'>focused</span>, <span className='text-primary fw-semibold'>passionate</span> and <span className='text-primary fw-semibold'>commited</span> person. I&apos;m always looking for new challenges and opportunities to grow as a developer.
+                I&apos;m a Software Developer located in Costa Rica. I have a passion for <span className='text-primary fw-semibold'>software development</span> and love to create for web and mobile devices. I like to turn <span className='text-primary fw-semibold'>ideas into code</span>. I&apos;m constantly learning since the past 3 years and looking for an opportinuty where I could use all my knowledge in order to help others. I&apos;m a very <span className='text-primary fw-semibold'>focused</span>, <span className='text-primary fw-semibold'>passionate</span> and <span className='text-primary fw-semibold'>commited</span> person. I&apos;m always looking for new challenges and opportunities to grow as a developer.
               </p>
             </div>
             <hr />            
@@ -35,18 +35,18 @@ const About = () => {
                 </div>
                 <div className="row mx-auto my-2">
                   <div className="col">                    
-                    <HtmlIcon />
+                    <NextIcon />
                   </div>
                   <div className="col">
-                    <CssIcon />
+                    <NodeJsIcon />
                   </div>
                   <div className="col">
-                    <JavaScriptIcon />
+                    <SQLIcon />
                   </div>
                 </div>
                 <div className="row mx-auto my-2">
                   <div className="col">
-                    <NextIcon />
+                    <AWSIcon />
                   </div>
                   <div className="col">
                     <AngularIcon />
@@ -57,10 +57,10 @@ const About = () => {
                 </div>
                 <div className="row mx-auto my-2">
                   <div className="col">
-                    <BootstrapIcon />
+                    <FlutterIcon />
                   </div>
                   <div className="col">
-                    <NodeJsIcon />
+                    <JavaIcon />
                   </div>
                   <div className="col">
                     <GitHubIcon />

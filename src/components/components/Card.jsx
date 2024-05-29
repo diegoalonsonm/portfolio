@@ -1,4 +1,3 @@
-import React from 'react'
 import { Github } from 'react-bootstrap-icons'
 import { WindowDesktop } from 'react-bootstrap-icons'
 

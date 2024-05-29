@@ -6,6 +6,7 @@ import RecipeBookImg from '../assets/img/recipeBook.jpeg'
 import QuoteGeneratorImg from '../assets/img/quoteGenerator.jpeg'
 import BookApiImg from '../assets/img/bookApi.jpg'
 import ReservApp from '../assets/img/reservapp.png'
+import CashControllerImg from '../assets/img/cashController.png'
 
 const Projects = () => {
   return (
@@ -13,6 +14,14 @@ const Projects = () => {
       <p className='bg-light fw-bold fs-2 text-secondary'>
         My projects
       </p>
+      <div className='row my-5 shadow mx-auto' style={{maxWidth: '1000px'}}>
+        <CardComponent title="Cash Controller" description="A PWA that let's you control your expenses. You can add, edit and delete expenses. It also has a chart that shows you the expenses of the current month. It has a login and register module to control the data of each user." 
+          image={CashControllerImg}
+          githubLink="https://github.com/diegoalonsonm/cash-controller-server" 
+          appLink="https://github.com/diegoalonsonm/cash-controller-client" 
+          techStack={['Node Js', 'Bootstrap', 'Next Js', 'SQL', 'Chart JS', 'Express', 'JWT']}
+        />        
+      </div>
       <div className='row my-5 shadow mx-auto' style={{maxWidth: '1000px'}}>
         <CardComponent title="Recipe Book" description="Web application where you can manage recipes 
           and create a shopping list with the ingredients you’ll need. It has an auth module in order 
