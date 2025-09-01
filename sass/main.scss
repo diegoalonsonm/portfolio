@@ -7,3 +7,65 @@ $danger: #d8eefe;
 $light: #fffffe;
 
 @import '../node_modules/bootstrap/scss/bootstrap';
+
+// Hero gradient styles
+.hero-gradient {
+  background: linear-gradient(135deg, #2c5aa0 0%, #1e3c72 25%, #4a90e2 50%, #7bb3f0 75%, #a8d8ff 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  // Better text visibility on gradient backgrounds
+  h1, h2, h3, h4, h5, h6, p, span {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .text-white {
+    color: #ffffff !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .text-warning {
+    color: #ffc107 !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    font-weight: 600;
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.card-gradient {
+  background: linear-gradient(135deg, #00b894 0%, #00cec9 50%, #55a3ff 100%);
+  height: 8px;
+  margin: -1rem -1rem 1rem -1rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
+#btn-demo:hover #svg-demo {
+  color: white !important; 
+  background-color: $primary !important;
+}
+
+#btn-demo:hover #span-demo{
+  color: white !important; 
+  background-color: $primary !important;
+}
+
+#btn-demo:hover {
+  background-color: $primary !important;
+  border-color: $primary !important;
+}

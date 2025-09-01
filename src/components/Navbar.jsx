@@ -8,7 +8,7 @@ function NavbarComponent() {
   return (
     <Navbar expand="lg" className="shadow-sm p-3 mb-1 bg-body-tertiary rounded">
       <Container>
-        <Navbar.Brand className="fw-bold text-primary fs-3">DIEGO</Navbar.Brand>
+        <Navbar.Brand className="fw-bold text-primary fs-3">Portfolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className='justify-content-lg-end'>
           <Nav className="">

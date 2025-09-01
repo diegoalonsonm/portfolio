@@ -13,6 +13,7 @@ import { Hero } from './components/Hero.jsx';
 import Projects from './components/Projects.jsx';
 import { Contact } from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
+import Skills from './components/Skills.jsx';
 
 function App() {
   return (
@@ -49,6 +50,15 @@ function App() {
         <Row>
           <Col>
             <Projects />
+          </Col>
+        </Row>
+      </Container>
+
+      {/* skills component */}
+      <Container fluid>
+        <Row>
+          <Col>
+            <Skills />
           </Col>
         </Row>
       </Container>
