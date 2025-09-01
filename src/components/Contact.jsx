@@ -7,29 +7,22 @@ import DiegoCV from '../assets/pdf/DiegoCV.pdf'
 
 export const Contact = () => {
   return (
-    <section id="contact" className='bg-danger text-center p-5'>
-      <div className='bg-danger'>
-        <p className='bg-danger fw-bold fs-2 text-secondary'>
+    <section id="contact" className='hero-gradient text-center p-5'>
+      <div className='bg-transparent'>
+        <p className='fw-bold bg-transparent fs-2 text-white'>
           Contact Me
         </p>
-        <p className='bg-danger fs-5 fw-semibold'>
-          If you would like to <span className='text-warning bg-danger'>hire me</span>, 
-          please <span className='text-warning bg-danger'>call me</span>,  
-          <span className='text-warning bg-danger'> text me</span> or send me an
-          <br />
-          <span className='text-warning bg-danger'>email</span>. And let's connect
-          on LinkedIn too!
+        <p className='fs-5 bg-transparent fw-semibold text-white'>
+          I'm always excited to discuss new opportunities, innovative projects, or collaborate on interesting challenges. Feel free to reach out!
         </p>
       </div>
-      <div className="bg-danger">
+      <div className='bg-transparent'>
         <div className="rounded border mx-auto p-5 my-5 shadow-lg" style={{maxWidth: '500px'}}>
           <div className="container">
             <div className="row py-2">
               <div className="col">
                 <div className="text-secondary">
-                  <a className='text-secondary text-decoration-none' href='https://www.linkedin.com/in/diegonaranjo03/'
-                    target='_blank'
-                  >                    
+                  <a className='text-secondary text-decoration-none' href='https://www.linkedin.com/in/diegonaranjo03/'target='_blank'>                    
                     <div>
                       <Linkedin size={24} className='me-1 me-sm-2' />
                       <span className='fs-5 mt-1 fw-semibold'>Diego Naranjo</span>
