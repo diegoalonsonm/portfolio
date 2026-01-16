@@ -2,26 +2,36 @@ const Skills = () => {
   const skillCategories = [
     {
       label: "Languages & Frameworks",
-      skills: ['React', 'Next.js', 'JavaScript', '.NET Core', 'Flutter', 'Node.js', 'Express', 'Java', 'SpringBoot']
+      skills: ['React', 'Next JS', '.NET', 'Bootstrap', 'Tailwind', 'C#', 'JavaScript', 'TypeScript', 'SQL (SQL Server, Oracle, MySQL)', 'Mongo DB', 'Java', 'Python']
     },
     {
-      label: "Databases",
-      skills: ['SQL Server', 'MySQL', 'Oracle Database', 'MongoDB']
+      label: "Technical Skills",
+      skills: ['Generative AI', 'Prompt Engineering', 'AI Integrations', 'System Design', 'Git', 'Scrum', 'Rest API', 'MVC']
     },
     {
       label: "Cloud & DevOps",
-      skills: ['Azure', 'CI/CD', 'DevOps', 'GitHub Actions', 'Git', 'REST APIs']
+      skills: ['Azure', 'AWS', 'CI/CD', 'Azure DevOps', 'GitHub Actions']
     },
     {
       label: "Soft Skills",
-      skills: ['Critical Thinking', 'Assertive Communication', 'Teamwork', 'Deep Research', 'Scrum']
+      skills: ['Adaptability', 'Discipline', 'Critical Thinking', 'Assertive Communication', 'Teamwork', 'Deep Research', 'Emotional Intelligence']
     }
   ];
 
   const certifications = [
-    'AWS Educate Introduction to Cloud 101',
-    'Git y GitHub: repositorio, commit y versiones',
-    'Angular - The Complete Guide'
+    {
+      name: 'Microsoft: Azure Fundamentals',
+      url: 'https://learn.microsoft.com/en-gb/users/diegoalonsonaranjomeza-9811/credentials/f8212af0706d8e97?ref=https%3A%2F%2Fwww.linkedin.com%2F' 
+    },
+    {
+      name: 'AWS Educate Introduction to Cloud 101',
+      url: 'https://www.credly.com/badges/ae36e8d5-369f-47e2-a172-791c19a1a197/linked_in_profile' 
+    },
+    {
+      name: 'Git y GitHub: repositorio, commit y versiones',
+      url: 'https://app.aluracursos.com/certificate/3ca340a2-b4f6-44f7-85c1-a2eef08baff8' 
+    },
+    
   ];
 
   return (
@@ -54,7 +64,14 @@ const Skills = () => {
             {certifications.map((cert, index) => (
               <div key={index} className="certification-item">
                 <span className="cert-number font-mono">0{index + 1}</span>
-                <span className="cert-name">{cert}</span>
+                <a 
+                  href={cert.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="cert-name"
+                >
+                  {cert.name}
+                </a>
               </div>
             ))}
           </div>
