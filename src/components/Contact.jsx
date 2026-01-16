@@ -1,70 +1,82 @@
-import '../../sass/main.scss';
-import '../App.css';
-
-import { Telephone, Envelope, Linkedin, FilePdf } from 'react-bootstrap-icons';
+import { Telephone, Envelope, Linkedin, Github } from 'react-bootstrap-icons';
 
 import DiegoCV from '../assets/pdf/DiegoCV.pdf'
 
 export const Contact = () => {
+  const contactLinks = [
+    {
+      icon: <Envelope size={20} />,
+      label: "Email",
+      value: "diegoalonsonm@gmail.com",
+      href: "mailto:diegoalonsonm@gmail.com"
+    },
+    {
+      icon: <Linkedin size={20} />,
+      label: "LinkedIn",
+      value: "Diego Naranjo",
+      href: "https://www.linkedin.com/in/diegonaranjo03/"
+    },
+    {
+      icon: <Github size={20} />,
+      label: "GitHub",
+      value: "diegoalonsonm",
+      href: "https://github.com/diegoalonsonm"
+    },
+    {
+      icon: <Telephone size={20} />,
+      label: "Phone",
+      value: "+506 6046-9117",
+      href: "tel:+50660469117"
+    }
+  ];
+
   return (
-    <section id="contact" className='hero-gradient text-center p-5'>
-      <div className='bg-transparent'>
-        <p className='fw-bold bg-transparent fs-2 text-white'>
-          Contact Me
-        </p>
-        <p className='fs-5 bg-transparent fw-semibold text-white'>
-          I'm always excited to discuss new opportunities, innovative projects, or collaborate on interesting challenges. Feel free to reach out!
-        </p>
-      </div>
-      <div className='bg-transparent'>
-        <div className="rounded border mx-auto p-5 my-5 shadow-lg" style={{maxWidth: '500px'}}>
-          <div className="container">
-            <div className="row py-2">
-              <div className="col">
-                <div className="text-secondary">
-                  <a className='text-secondary text-decoration-none' href='https://www.linkedin.com/in/diegonaranjo03/'target='_blank'>                    
-                    <div>
-                      <Linkedin size={24} className='me-1 me-sm-2' />
-                      <span className='fs-5 mt-1 fw-semibold'>Diego Naranjo</span>
-                    </div>
-                  </a>
+    <section id="contact" className="contact-brutal section-padding">
+      <div className="contact-container">
+        {/* Section header */}
+        <div className="contact-header">
+          <span className="text-label">Get in Touch</span>
+          <h2 className="section-title font-mono">LET'S CONNECT</h2>
+          <p className="contact-intro">
+            I'm always open to discussing new opportunities, innovative projects,
+            or interesting challenges. Feel free to reach out.
+          </p>
+        </div>
+
+        {/* Contact grid */}
+        <div className="contact-grid">
+          {/* Contact links */}
+          <div className="contact-links">
+            {contactLinks.map((link, index) => (
+              <a
+                key={index}
+                href={link.href}
+                target={link.href.startsWith('http') ? '_blank' : undefined}
+                rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                className="contact-link-item"
+              >
+                <span className="contact-icon">{link.icon}</span>
+                <div className="contact-link-content">
+                  <span className="contact-link-label font-mono">{link.label}</span>
+                  <span className="contact-link-value">{link.value}</span>
                 </div>
-              </div>
-            </div>
-            <div className="row py-2">
-              <div className="col">
-                <div className="text-secondary">
-                  <div>
-                    <Telephone size={24} className='me-1 me-sm-2' />
-                    <span className='fs-5 mt-1 fw-semibold'>+506 6046-9117</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="row py-2">
-              <div className="col">
-                <div className="text-secondary">      
-                  <div>
-                    <Envelope size={24} className='me-1 me-sm-2' />
-                    <span className='fs-5 mt-1 ms-0 fw-semibold'>diegoalon
-                      <br className='d-block d-sm-none' />sonm@
-                      <br className='d-block d-sm-none' />gmail.com</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="row py-2">
-              <div className="col">
-                <div className="text-secondary">
-                  <a className='text-secondary text-decoration-none' href={DiegoCV} target='_blank'>                    
-                    <div>
-                      <FilePdf size={24} className='me-1 me-sm-2' />
-                      <span className='fs-5 mt-1 fw-semibold'>Open CV</span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
+              </a>
+            ))}
+          </div>
+
+          {/* CTA */}
+          <div className="contact-cta">
+            <p className="cta-text">
+              Looking for my full resume?
+            </p>
+            <a
+              href={DiegoCV}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-brutal btn-fill"
+            >
+              Download CV
+            </a>
           </div>
         </div>
       </div>

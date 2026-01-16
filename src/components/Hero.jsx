@@ -1,23 +1,26 @@
-import '../../sass/main.scss';
-import '../App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import ButtonComponent from '../components/components/Button';
-
 import DiegoCV from '../assets/pdf/DiegoCV.pdf'
 
 export const Hero = () => {
   return (
-    <section className='container-fluid text-center p-lg-40 hero-gradient'>
-        <p className='bg-transparent h1 text-white fw-bold'>Hi, I&apos;m Diego Naranjo</p>
-        <p className="bg-transparent h2 text-white fw-semibold">Software Developer</p>
-        <div className='bg-transparent d-flex justify-content-center mt-4'>
-          <ButtonComponent className="mx-1 mt-3 hero-btn" color="primary" textColor="white" 
-            text="View my work" href="projects" 
-            />
-          <ButtonComponent className="mx-1 mt-3 hero-btn" color="primary" textColor="white" 
-            text="Open CV" href={DiegoCV} download="DiegoCV.pdf" cv={true}
-            />
+    <section className="hero-brutal" id="home">
+      <div className="hero-content">
+        <span className="text-label">Full Stack Developer</span>
+        <h1 className="hero-name">
+          DIEGO<br />
+          NARANJO
+        </h1>
+        <p className="hero-tagline">
+          Building digital experiences with precision and purpose.
+        </p>
+        <div className="hero-actions">
+          <a href="#projects" className="btn-brutal btn-fill">
+            View Work
+          </a>
+          <a href={DiegoCV} target="_blank" rel="noopener noreferrer" className="btn-brutal">
+            Download CV
+          </a>
         </div>
+      </div>
     </section>
   )
 }
