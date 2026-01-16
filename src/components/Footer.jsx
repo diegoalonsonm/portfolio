@@ -1,9 +1,11 @@
-import '../../sass/main.scss';
-
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className='bg-warning py-5 text-center text-light fw-semibold fs-5'>
-      Developed by Diego Naranjo | 2023
+    <footer className="footer-brutal">
+      <span className="footer-copyright font-mono">
+        &copy; {currentYear} Diego Naranjo
+      </span>
     </footer>
   )
 }
