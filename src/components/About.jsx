@@ -1,11 +1,11 @@
 const About = () => {
   return (
-    <section id="about" className="about-brutal section-padding">
+    <section id="servicios" className="about-brutal section-padding">
       <div className="about-container">
         {/* Section header */}
         <div className="about-header">
-          <span className="text-label">About</span>
-          <h2 className="section-title font-mono">WHO I AM</h2>
+          <span className="text-label">Servicios</span>
+          <h2 className="section-title font-mono">LO QUE HACEMOS</h2>
         </div>
 
         {/* Main content - two column layout */}
@@ -13,56 +13,63 @@ const About = () => {
           {/* Left column - Main text */}
           <div className="about-text">
             <p>
-              I am a <span className="text-accent">Software Engineer</span> driven by a passion for building intelligent, scalable solutions. My expertise lies at the intersection of <span className="text-accent">Full-Stack Development</span> and <span className="text-accent">Artificial Intelligence</span>, where I turn complex technical requirements into seamless, user-centric applications.
+              Somos una <span className="text-accent">AI Automation Agency</span>. Tomamos las herramientas y datos que tu negocio ya utiliza y les sumamos inteligencia artificial para <span className="text-accent">resolver problemas reales</span>.
             </p>
             <p>
-              I specialize in crafting tailored software using modern frameworks like <span className="text-accent">React</span>, <span className="text-accent">Next.js</span>, and <span className="text-accent">.NET</span>, integrated with cutting-edge AI capabilities. Beyond writing code, I focus on the bigger picture—utilizing <span className="text-accent">Clean Architecture</span> and <span className="text-accent">System Design</span> principles to create robust systems that stand the test of time.
+              No vendemos tecnolog&iacute;a por vender. Cada soluci&oacute;n que implementamos est&aacute; dise&ntilde;ada para generar un impacto medible: <span className="text-accent">menos horas manuales</span>, mejor atenci&oacute;n al cliente y <span className="text-accent">m&aacute;rgenes m&aacute;s altos</span>.
             </p>
             <p>
-              I thrive on innovation and adaptability. My approach is defined by a relentless drive to solve problems and deliver high-impact results, regardless of the environment. Whether I am architecting complex web applications or leveraging <span className="text-accent">Agentic AI</span> to redefine workflows, my goal is always the same: to build technology that doesn&apos;t just function, but excels.
+              Desde automatizaciones con <span className="text-accent">n8n</span> y APIs hasta agentes de IA con <span className="text-accent">LangChain</span> y RAGs, construimos soluciones que se integran con tu operaci&oacute;n actual sin fricci&oacute;n.
             </p>
           </div>
 
           {/* Right column - Quick facts */}
           <div className="about-facts">
             <div className="fact-item">
-              <span className="fact-label">Location</span>
-              <span className="fact-value">Costa Rica</span>
+              <span className="fact-label">Modelo</span>
+              <span className="fact-value">Cobro basado en valor, no por hora</span>
             </div>
             <div className="fact-item">
-              <span className="fact-label">Education</span>
-              <span className="fact-value">Computer Systems Engineering</span>
+              <span className="fact-label">Entregables</span>
+              <span className="fact-value">Soluci&oacute;n + documentaci&oacute;n completa + soporte</span>
             </div>
             <div className="fact-item">
-              <span className="fact-label">Focus</span>
-              <span className="fact-value">Full Stack Development, AI Engineering, Cloud Computing</span>
+              <span className="fact-label">Garant&iacute;a</span>
+              <span className="fact-value">2 semanas de acompa&ntilde;amiento post-entrega incluidas</span>
             </div>
           </div>
         </div>
 
-        {/* Focus areas - minimal list */}
+        {/* Services grid */}
         <div className="about-focus">
-          <h3 className="focus-title font-mono">FOCUS AREAS</h3>
+          <h3 className="focus-title font-mono">NUESTROS SERVICIOS</h3>
           <div className="focus-grid">
             <div className="focus-item">
               <span className="focus-number font-mono">01</span>
               <div className="focus-content">
-                <h4>AI-Driven Innovation</h4>
-                <p>Integrating cutting-edge Agentic AI and automation to transform static software into intelligent, adaptive systems that evolve with business needs</p>
+                <h4>Auditor&iacute;a de Procesos</h4>
+                <p>Diagn&oacute;stico de tus operaciones para identificar oportunidades de automatizaci&oacute;n. Entregamos un roadmap con las herramientas recomendadas y el ROI esperado de cada implementaci&oacute;n.</p>
               </div>
             </div>
             <div className="focus-item">
               <span className="focus-number font-mono">02</span>
               <div className="focus-content">
-                <h4>Scalable Full-Stack Architecture</h4>
-                <p>Designing resilient, high-performance applications using Clean Architecture and modern frameworks like Next.js and .NET to ensure long-term stability and growth</p>
+                <h4>Automatizaci&oacute;n de Procesos</h4>
+                <p>Eliminamos tareas manuales conectando tus sistemas con n8n, webhooks y APIs. Desde sincronizaci&oacute;n de inventarios hasta automatizaci&oacute;n de gastos y facturaci&oacute;n.</p>
               </div>
             </div>
             <div className="focus-item">
               <span className="focus-number font-mono">03</span>
               <div className="focus-content">
-                <h4>Strategic Solution Engineering</h4>
-                <p>Translating complex technical requirements into seamless, user-centric products that bridge the gap between robust backend logic and intuitive modern design</p>
+                <h4>Agentes de IA</h4>
+                <p>Desarrollamos agentes inteligentes para extracci&oacute;n de datos de documentos, chatbots de atenci&oacute;n al cliente y procesamiento automatizado de informaci&oacute;n cr&iacute;tica para tu negocio.</p>
+              </div>
+            </div>
+            <div className="focus-item">
+              <span className="focus-number font-mono">04</span>
+              <div className="focus-content">
+                <h4>Soluciones a Medida</h4>
+                <p>Creamos RAGs, wrappers de LLMs y herramientas internas potenciadas con IA, dise&ntilde;adas espec&iacute;ficamente para las necesidades de tu negocio con bases de datos vectoriales y modelos propios.</p>
               </div>
             </div>
           </div>
