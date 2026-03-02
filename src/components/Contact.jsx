@@ -1,30 +1,22 @@
-import { Telephone, Envelope, Linkedin, Github } from 'react-bootstrap-icons';
-
-import DiegoCV from '../assets/pdf/DiegoCV.pdf'
+import { Telephone, Envelope, Linkedin } from 'react-bootstrap-icons';
 
 export const Contact = () => {
   const contactLinks = [
     {
       icon: <Envelope size={20} />,
       label: "Email",
-      value: "diegoalonsonm@gmail.com",
-      href: "mailto:diegoalonsonm@gmail.com"
+      value: "dnmstudio@outlook.es",
+      href: "mailto:dnmstudio@outlook.es"
     },
     {
       icon: <Linkedin size={20} />,
       label: "LinkedIn",
-      value: "Diego Naranjo",
-      href: "https://www.linkedin.com/in/diegonaranjo03/"
-    },
-    {
-      icon: <Github size={20} />,
-      label: "GitHub",
-      value: "diegoalonsonm",
-      href: "https://github.com/diegoalonsonm"
+      value: "DNM Studio",
+      href: "https://www.linkedin.com/company/dnm-studio/"
     },
     {
       icon: <Telephone size={20} />,
-      label: "Phone",
+      label: "Tel\u00e9fono",
       value: "+506 6046-9117",
       href: "tel:+50660469117"
     }
@@ -35,11 +27,10 @@ export const Contact = () => {
       <div className="contact-container">
         {/* Section header */}
         <div className="contact-header">
-          <span className="text-label">Get in Touch</span>
-          <h2 className="section-title font-mono">LET'S CONNECT</h2>
+          <span className="text-label">Contacto</span>
+          <h2 className="section-title font-mono">HABLEMOS</h2>
           <p className="contact-intro">
-            I'm always open to discussing new opportunities, innovative projects,
-            or interesting challenges. Feel free to reach out.
+            Cu&eacute;ntanos sobre tu negocio y te ayudamos a identificar oportunidades de automatizaci&oacute;n. Sin compromiso, sin letra peque&ntilde;a.
           </p>
         </div>
 
@@ -67,15 +58,13 @@ export const Contact = () => {
           {/* CTA */}
           <div className="contact-cta">
             <p className="cta-text">
-              Looking for my full resume?
+              El primer paso es una conversaci&oacute;n. Escr&iacute;benos y exploremos c&oacute;mo la IA puede trabajar para tu negocio.
             </p>
             <a
-              href={DiegoCV}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:diegoalonsonm@gmail.com"
               className="btn-brutal btn-fill"
             >
-              Download CV
+              Enviar Mensaje
             </a>
           </div>
         </div>

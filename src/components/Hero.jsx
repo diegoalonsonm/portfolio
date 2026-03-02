@@ -1,23 +1,20 @@
-import DiegoCV from '../assets/pdf/DiegoCV.pdf'
-
 export const Hero = () => {
   return (
     <section className="hero-brutal" id="home">
       <div className="hero-content">
-        <span className="text-label">Full Stack Developer</span>
+        <span className="text-label">AI Automation Agency</span>
         <h1 className="hero-name">
-          DIEGO<br />
-          NARANJO
+          DNM STUDIO
         </h1>
         <p className="hero-tagline">
-          Building digital experiences with precision and purpose.
+          Implementamos soluciones de IA con tus herramientas y datos existentes para resolver problemas reales, ahorrar tiempo y aumentar tus m&aacute;rgenes.
         </p>
         <div className="hero-actions">
-          <a href="#projects" className="btn-brutal btn-fill">
-            View Work
+          <a href="#contact" className="btn-brutal btn-fill">
+            Agenda una Consulta
           </a>
-          <a href={DiegoCV} target="_blank" rel="noopener noreferrer" className="btn-brutal">
-            Download CV
+          <a href="#servicios" className="btn-brutal">
+            Ver Servicios
           </a>
         </div>
       </div>

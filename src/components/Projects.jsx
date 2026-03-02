@@ -1,40 +1,48 @@
-import ProjectCard from './components/ProjectCard';
-
 const Projects = () => {
-  const projects = [
+  const steps = [
     {
       number: "01",
-      titulo: "Peseta",
-      descripcion: "Designed and engineered Peseta, a comprehensive financial management ecosystem that empowers users to visualize and control their economic health. Built upon a robust Next.js and Node.js architecture, the application integrates interactive Chart.js analytics to transform raw transactional data into actionable financial insights. This project demonstrates end-to-end full-stack expertise, encompassing a normalized MySQL database design, automated CI/CD workflows, and seamless cloud deployment via Vercel to ensure high availability and performance.",
-      timeframe: "2026",
-      stack: ['Node.js', 'Express', 'Next.js', 'MySQL', 'Bootstrap', 'Chart.js', 'Vercel', 'GitHub'],
-      codeUrl: "https://github.com/diegoalonsonm/peseta-server",
-      demoUrl: "https://peseta.dnmstudio.io/"
+      title: "Diagn\u00f3stico",
+      description: "Auditamos tus procesos actuales para identificar cuellos de botella y oportunidades de automatizaci\u00f3n. Mapeamos las herramientas que ya usas, d\u00f3nde viven tus datos y calculamos el impacto real que cada mejora puede generar."
     },
+    {
+      number: "02",
+      title: "Propuesta y Acuerdo",
+      description: "Presentamos una propuesta basada en el valor que la soluci\u00f3n genera para tu negocio, no en horas de trabajo. Incluye timeline, entregables concretos, alcance definido y una estructura de cobro transparente."
+    },
+    {
+      number: "03",
+      title: "Desarrollo",
+      description: "Implementamos la soluci\u00f3n con tus datos reales, iterando sobre resultados concretos. Durante el desarrollo mantenemos comunicaci\u00f3n constante y demos de avance para asegurar que el resultado se alinee con tus expectativas."
+    },
+    {
+      number: "04",
+      title: "Entrega y Soporte",
+      description: "Demo en vivo mostrando el antes y despu\u00e9s de tus procesos. Entregamos documentaci\u00f3n completa: video tutorial, manual de usuario y documentaci\u00f3n t\u00e9cnica. Incluye 2 semanas de acompa\u00f1amiento post-entrega para monitoreo y ajustes."
+    }
   ];
 
   return (
-    <section id="projects" className="projects-brutal section-padding">
+    <section id="proceso" className="projects-brutal section-padding">
       <div className="projects-container">
         {/* Section header */}
         <div className="projects-header">
-          <span className="text-label">Portfolio</span>
-          <h2 className="section-title font-mono">SELECTED WORK</h2>
+          <span className="text-label">Proceso</span>
+          <h2 className="section-title font-mono">C&Oacute;MO TRABAJAMOS</h2>
         </div>
 
-        {/* Projects grid */}
+        {/* Steps grid */}
         <div className="projects-grid">
-          {projects.map((project, index) => (
-            <ProjectCard
-              key={index}
-              number={project.number}
-              titulo={project.titulo}
-              descripcion={project.descripcion}
-              timeframe={project.timeframe}
-              stack={project.stack}
-              codeUrl={project.codeUrl}
-              demoUrl={project.demoUrl}
-            />
+          {steps.map((step, index) => (
+            <div key={index} className="project-card">
+              <span className="project-number font-mono">{step.number}</span>
+              <div className="project-info">
+                <div className="project-header">
+                  <h3 className="project-title font-mono">{step.title}</h3>
+                </div>
+                <p className="project-description">{step.description}</p>
+              </div>
+            </div>
           ))}
         </div>
       </div>

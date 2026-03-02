@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="footer-brutal">
       <span className="footer-copyright font-mono">
-        &copy; {currentYear} Diego Naranjo
+        &copy; {currentYear} - DNM Studio
       </span>
     </footer>
   )
