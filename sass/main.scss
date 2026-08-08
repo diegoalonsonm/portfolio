@@ -865,6 +865,26 @@ html, body {
   }
 }
 
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-link {
+  font-size: $font-size-micro;
+  text-transform: uppercase;
+  letter-spacing: $ls-wide;
+  color: $text-secondary;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
 .footer-copyright {
   font-size: $font-size-micro;
   text-transform: uppercase;
